@@ -1,5 +1,5 @@
 
-CUDA_VISIBLE_DEVICES="0" python main.py \
+CUDA_VISIBLE_DEVICES="1" python main.py \
     --model_name_or_path huggyllama/llama-7b \
     --output_dir ./output/edge_llm_llama_7b \
     --qat True \
