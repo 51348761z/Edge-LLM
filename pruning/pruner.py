@@ -52,6 +52,8 @@ def get_pruned_model(model, tokenizer, args, logger):
     print(time.time() - time1)
 
     if args.save_pruned_model:
+        if not os.path.exists(args.pruned_model_path):
+            os.makedirs(args.pruned_model_path)
         torch.save({
             'model': model,
             'tokenizer': tokenizer,

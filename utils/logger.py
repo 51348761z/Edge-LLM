@@ -12,7 +12,8 @@ import os
 # Define a utility method for setting the logging parameters of a logger
 def get_logger(logger_name, log_dir):
     if os.path.exists(log_dir):
-        raise Exception("Logging Directory {} Has Already Exists.".format(log_dir))
+        # raise Exception("Logging Directory {} Has Already Exists.".format(log_dir))
+        print("Logging Directory {} Has Already Exists and skipping to create it...".format(log_dir))
     else:
         os.mkdir(log_dir)
 

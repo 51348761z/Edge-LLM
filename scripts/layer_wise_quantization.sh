@@ -1,5 +1,5 @@
 
-CUDA_VISIBLE_DEVICES="0" python exploration.py \
+CUDA_VISIBLE_DEVICES="1" python exploration.py \
     --model_name_or_path huggyllama/llama-7b \
     --output_dir ./output/layer_wise_quantization_llama_7b \
     --qat True \

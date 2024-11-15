@@ -177,6 +177,7 @@ def smart_tokenizer_and_embedding_resize(
 
 def train():
     print(torch.cuda.is_available())
+    print("This is cuda.is_available up here!!!!")
     os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:26"
     args, training_args = get_args()
     logger = get_logger("Edge_LLM", args.log_dir)

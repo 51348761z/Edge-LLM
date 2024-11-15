@@ -1,5 +1,5 @@
-transformers==4.36
-accelerate
+transformers==4.35.2
+accelerate==0.28.0
 datasets
 sentencepiece
 fairscale
@@ -13,3 +13,4 @@ huggingface_hub
 wandb
 pandas
 evaluate
+scikit-learn
